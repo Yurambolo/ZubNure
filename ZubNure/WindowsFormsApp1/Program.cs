@@ -16,11 +16,7 @@ namespace WindowsFormsApp1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-<<<<<<< Updated upstream
             Application.Run(new Home_form());
-=======
-            Application.Run(new HomeForm());
->>>>>>> Stashed changes
         }
     }
 }
