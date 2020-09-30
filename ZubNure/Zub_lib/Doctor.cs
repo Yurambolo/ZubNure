@@ -6,17 +6,18 @@ using System.Threading.Tasks;
 
 namespace Zub_lib
 {
+    [Serializable]
     public class Doctor
     {
         public string Name_Acives { get; set; }
         public List<Service> Avalible_service { get; private set; }
+        public List<DateTime> Availible_time { get; set; }
+        public List<DateTime> Booked_time { get; set; }
 
-        public List<Service> Booked_service { get; set; }
-
-        public void Add(string name, double price, DateTime time)
+        public void Book(DateTime time)
         {
-            Booked_service.Add(new Service(name, price, time));
-
+            Booked_time.Add(time);
+            Availible_time.Remove(time);
         }
 
     }
