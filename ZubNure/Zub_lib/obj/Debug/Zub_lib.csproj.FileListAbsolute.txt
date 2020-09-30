@@ -1,0 +1,6 @@
+C:\Users\USER\Documents\GitHub\ZubNure\ZubNure\Zub_lib\bin\Debug\Zub_lib.dll
+C:\Users\USER\Documents\GitHub\ZubNure\ZubNure\Zub_lib\bin\Debug\Zub_lib.pdb
+C:\Users\USER\Documents\GitHub\ZubNure\ZubNure\Zub_lib\obj\Debug\Zub_lib.csprojAssemblyReference.cache
+C:\Users\USER\Documents\GitHub\ZubNure\ZubNure\Zub_lib\obj\Debug\Zub_lib.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\GitHub\ZubNure\ZubNure\Zub_lib\obj\Debug\Zub_lib.dll
+C:\Users\USER\Documents\GitHub\ZubNure\ZubNure\Zub_lib\obj\Debug\Zub_lib.pdb
