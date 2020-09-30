@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Zub_Forms
+namespace WindowsFormsApp1
 {
     static class Program
     {
@@ -16,7 +16,11 @@ namespace Zub_Forms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Main_Form());
+<<<<<<< Updated upstream
+            Application.Run(new Home_form());
+=======
+            Application.Run(new HomeForm());
+>>>>>>> Stashed changes
         }
     }
 }
