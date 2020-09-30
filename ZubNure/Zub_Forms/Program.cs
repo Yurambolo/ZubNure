@@ -16,15 +16,11 @@ namespace WindowsFormsApp1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-<<<<<<< HEAD
 <<<<<<< Updated upstream
             Application.Run(new Home_form());
 =======
             Application.Run(new HomeForm());
 >>>>>>> Stashed changes
-=======
-            Application.Run(new Form1());
->>>>>>> parent of 3985d8e... Header_1
         }
     }
 }
