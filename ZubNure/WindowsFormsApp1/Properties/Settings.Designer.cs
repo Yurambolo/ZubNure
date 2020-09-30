@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Zub_Forms.Properties
+namespace WindowsFormsApp1.Properties
 {
 
 
