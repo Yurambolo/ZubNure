@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Zub_Forms
 {
-    public partial class Main_Form : Form
+    public partial class Form1 : Form
     {
-        public Main_Form()
+        public Form1()
         {
             InitializeComponent();
         }
