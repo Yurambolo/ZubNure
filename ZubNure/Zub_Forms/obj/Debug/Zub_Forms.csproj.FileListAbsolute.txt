@@ -8,3 +8,16 @@ C:\Users\User\Мусор (а может и нет)\2 курс\ЛМВЗ\ZubNure\Z
 C:\Users\User\Мусор (а может и нет)\2 курс\ЛМВЗ\ZubNure\ZubNure\Zub_Forms\obj\Debug\Zub_Forms.csproj.CoreCompileInputs.cache
 C:\Users\User\Мусор (а может и нет)\2 курс\ЛМВЗ\ZubNure\ZubNure\Zub_Forms\obj\Debug\Zub_Forms.exe
 C:\Users\User\Мусор (а может и нет)\2 курс\ЛМВЗ\ZubNure\ZubNure\Zub_Forms\obj\Debug\Zub_Forms.pdb
+C:\Users\USER\Documents\GitHub\ZubNure\ZubNure\Zub_Forms\bin\Debug\Zub_Forms.exe.config
+C:\Users\USER\Documents\GitHub\ZubNure\ZubNure\Zub_Forms\bin\Debug\Zub_Forms.exe
+C:\Users\USER\Documents\GitHub\ZubNure\ZubNure\Zub_Forms\bin\Debug\Zub_Forms.pdb
+C:\Users\USER\Documents\GitHub\ZubNure\ZubNure\Zub_Forms\bin\Debug\Zub_lib.dll
+C:\Users\USER\Documents\GitHub\ZubNure\ZubNure\Zub_Forms\bin\Debug\Zub_lib.pdb
+C:\Users\USER\Documents\GitHub\ZubNure\ZubNure\Zub_Forms\obj\Debug\Zub_Forms.csprojAssemblyReference.cache
+C:\Users\USER\Documents\GitHub\ZubNure\ZubNure\Zub_Forms\obj\Debug\Zub_Forms.Main_Form.resources
+C:\Users\USER\Documents\GitHub\ZubNure\ZubNure\Zub_Forms\obj\Debug\Zub_Forms.Properties.Resources.resources
+C:\Users\USER\Documents\GitHub\ZubNure\ZubNure\Zub_Forms\obj\Debug\Zub_Forms.csproj.GenerateResource.cache
+C:\Users\USER\Documents\GitHub\ZubNure\ZubNure\Zub_Forms\obj\Debug\Zub_Forms.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\GitHub\ZubNure\ZubNure\Zub_Forms\obj\Debug\Zub_Forms.csproj.CopyComplete
+C:\Users\USER\Documents\GitHub\ZubNure\ZubNure\Zub_Forms\obj\Debug\Zub_Forms.exe
+C:\Users\USER\Documents\GitHub\ZubNure\ZubNure\Zub_Forms\obj\Debug\Zub_Forms.pdb
