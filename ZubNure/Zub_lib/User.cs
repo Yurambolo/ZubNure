@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Zub_lib
 {
     [Serializable]
-    class User
+    public class User
     {
         public string Name { get; set; }
         public string Mobile { get; set; }

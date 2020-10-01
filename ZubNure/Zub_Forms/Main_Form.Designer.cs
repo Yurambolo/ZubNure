@@ -34,12 +34,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Menu = new System.Windows.Forms.MenuStrip();
-            this.Main = new System.Windows.Forms.ToolStripMenuItem();
-            this.Doctors = new System.Windows.Forms.ToolStripMenuItem();
-            this.Appoint = new System.Windows.Forms.ToolStripMenuItem();
-            this.Feedback = new System.Windows.Forms.ToolStripMenuItem();
-            this.About = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.Appoint_Button = new System.Windows.Forms.Button();
@@ -48,12 +42,18 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
+            this.Main = new System.Windows.Forms.ToolStripMenuItem();
+            this.Doctors = new System.Windows.Forms.ToolStripMenuItem();
+            this.Appoint = new System.Windows.Forms.ToolStripMenuItem();
+            this.Feedback = new System.Windows.Forms.ToolStripMenuItem();
+            this.About = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu = new System.Windows.Forms.MenuStrip();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.Menu.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.Menu.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -109,56 +109,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(61, 58);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // Menu
-            // 
-            this.Menu.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.Menu.Dock = System.Windows.Forms.DockStyle.None;
-            this.Menu.Font = new System.Drawing.Font("Segoe UI", 13F);
-            this.Menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.Main,
-            this.Doctors,
-            this.Appoint,
-            this.Feedback,
-            this.About});
-            this.Menu.Location = new System.Drawing.Point(44, 73);
-            this.Menu.Name = "Menu";
-            this.Menu.Size = new System.Drawing.Size(847, 33);
-            this.Menu.TabIndex = 2;
-            this.Menu.Text = "menuStrip1";
-            // 
-            // Main
-            // 
-            this.Main.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.Main.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Main.Name = "Main";
-            this.Main.Size = new System.Drawing.Size(133, 29);
-            this.Main.Text = "Главная         ";
-            this.Main.Click += new System.EventHandler(this.Main_Click);
-            // 
-            // Doctors
-            // 
-            this.Doctors.Name = "Doctors";
-            this.Doctors.Size = new System.Drawing.Size(149, 29);
-            this.Doctors.Text = "Доктора           ";
-            // 
-            // Appoint
-            // 
-            this.Appoint.Name = "Appoint";
-            this.Appoint.Size = new System.Drawing.Size(236, 29);
-            this.Appoint.Text = "Записатся к доктору         ";
-            // 
-            // Feedback
-            // 
-            this.Feedback.Name = "Feedback";
-            this.Feedback.Size = new System.Drawing.Size(131, 29);
-            this.Feedback.Text = "Отывы          ";
-            // 
-            // About
-            // 
-            this.About.Name = "About";
-            this.About.Size = new System.Drawing.Size(70, 29);
-            this.About.Text = "О нас";
             // 
             // panel2
             // 
@@ -240,6 +190,57 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Онлайн запись на приём в лучшую клинику \r\nХарькова!";
             // 
+            // Main
+            // 
+            this.Main.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.Main.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Main.Name = "Main";
+            this.Main.Size = new System.Drawing.Size(133, 29);
+            this.Main.Text = "Главная         ";
+            this.Main.Click += new System.EventHandler(this.Main_Click);
+            // 
+            // Doctors
+            // 
+            this.Doctors.Name = "Doctors";
+            this.Doctors.Size = new System.Drawing.Size(149, 29);
+            this.Doctors.Text = "Доктора           ";
+            this.Doctors.Click += new System.EventHandler(this.Doctors_Click);
+            // 
+            // Appoint
+            // 
+            this.Appoint.Name = "Appoint";
+            this.Appoint.Size = new System.Drawing.Size(236, 29);
+            this.Appoint.Text = "Записатся к доктору         ";
+            // 
+            // Feedback
+            // 
+            this.Feedback.Name = "Feedback";
+            this.Feedback.Size = new System.Drawing.Size(107, 29);
+            this.Feedback.Text = "Услуги      ";
+            // 
+            // About
+            // 
+            this.About.Name = "About";
+            this.About.Size = new System.Drawing.Size(89, 29);
+            this.About.Text = "Отзывы";
+            // 
+            // Menu
+            // 
+            this.Menu.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.Menu.Dock = System.Windows.Forms.DockStyle.None;
+            this.Menu.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.Menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Main,
+            this.Doctors,
+            this.Appoint,
+            this.Feedback,
+            this.About});
+            this.Menu.Location = new System.Drawing.Point(54, 73);
+            this.Menu.Name = "Menu";
+            this.Menu.Size = new System.Drawing.Size(722, 33);
+            this.Menu.TabIndex = 2;
+            this.Menu.Text = "menuStrip1";
+            // 
             // Main_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -260,13 +261,13 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.Menu.ResumeLayout(false);
-            this.Menu.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.Menu.ResumeLayout(false);
+            this.Menu.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -280,12 +281,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button Appoint_Button;
-        private System.Windows.Forms.MenuStrip Menu;
-        private System.Windows.Forms.ToolStripMenuItem Main;
-        private System.Windows.Forms.ToolStripMenuItem Doctors;
-        private System.Windows.Forms.ToolStripMenuItem Appoint;
-        private System.Windows.Forms.ToolStripMenuItem Feedback;
-        private System.Windows.Forms.ToolStripMenuItem About;
         private System.Windows.Forms.Button Back;
         private System.Windows.Forms.Button Exit;
         private System.Windows.Forms.Panel panel3;
@@ -293,6 +288,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ToolStripMenuItem Main;
+        private System.Windows.Forms.ToolStripMenuItem Doctors;
+        private System.Windows.Forms.ToolStripMenuItem Appoint;
+        private System.Windows.Forms.ToolStripMenuItem Feedback;
+        private System.Windows.Forms.ToolStripMenuItem About;
+        private System.Windows.Forms.MenuStrip Menu;
     }
 }
 

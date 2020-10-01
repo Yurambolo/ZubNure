@@ -36,7 +36,7 @@ namespace Zub_lib
 
                 Copy(de.Doctors, dentistry.Doctors);
                 Copy(de.Users, dentistry.Users);
-                Copy(de.Appointments, dentistry.Appointments);
+               // Copy(de.Appointments, dentistry.Appointments);
             }
 
             void Copy<T>(List<T> from, List<T> to)

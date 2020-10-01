@@ -26,5 +26,14 @@ namespace Zub_Forms
         {
 
         }
+
+        private void Doctors_Click(object sender, EventArgs e)
+        {
+            var f = new Doctrors_Form();
+            this.Hide();
+            f.ShowDialog();
+            if (f.DialogResult == DialogResult.OK)
+                this.Show();
+        }
     }
 }
