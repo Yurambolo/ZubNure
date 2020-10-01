@@ -10,19 +10,19 @@ using System.Windows.Forms;
 
 namespace Zub_Forms
 {
-    public partial class Main_Form : Form
+    public partial class Doctrors_Form : Form
     {
-        public Main_Form()
+        public Doctrors_Form()
         {
             InitializeComponent();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+
         }
 
-        private void Main_Click(object sender, EventArgs e)
+        private void Doctrors_Form_Load(object sender, EventArgs e)
         {
 
         }
