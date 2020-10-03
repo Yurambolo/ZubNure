@@ -25,3 +25,4 @@ C:\Users\User\Мусор (а может и нет)\2 курс\ЛМВЗ\ZubNure\Z
 C:\Users\User\Мусор (а может и нет)\2 курс\ЛМВЗ\ZubNure\ZubNure\Zub_Forms\bin\Debug\Zub_lib.pdb
 C:\Users\User\Мусор (а может и нет)\2 курс\ЛМВЗ\ZubNure\ZubNure\Zub_Forms\obj\Debug\Zub_Forms.csproj.CopyComplete
 C:\Users\USER\Documents\GitHub\ZubNure\ZubNure\Zub_Forms\obj\Debug\Zub_Forms.Doctrors_Form.resources
+C:\Users\User\Мусор (а может и нет)\2 курс\ЛМВЗ\ZubNure\ZubNure\Zub_Forms\obj\Debug\Zub_Forms.Doctrors_Form.resources

@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 namespace Zub_lib
 {
     [Serializable]
-   public class Dentistry
+    public class Dentistry
     {
         Random r;
         public List<User> Users { get; set; }
         public List<Doctor> Doctors { get; set; }
+        public List<Service> Services { get; set; }
         //public List<Appointment> Appointments { get; set; }
 
         public Dentistry()
@@ -44,15 +45,20 @@ namespace Zub_lib
                 d.Name_Acives = names[i % names.Length];
                 string path = $"{i % names.Length}.jpg";
                 d.Image = new System.Drawing.Bitmap(System.IO.Path.GetFullPath(path));
-                d.Availible_time = new List<DateTime>();
+                d.Availible_days = new List<Day>();
+                List<string> standarttime = new List<string>() { "10:00","11:00","12:00","13:00","14:00"};
 
-                for(int j = 0; j <= 30 ; ++j)
+                for (int j = 0; j <= 30 ; ++j)
                 {
-                    d.Availible_time.Add(t.AddDays(r.Next(180)));
+                    DateTime someday = DateTime.Today.AddDays(j);
+                    if (someday.DayOfWeek != DayOfWeek.Saturday && someday.DayOfWeek != DayOfWeek.Sunday)
+                        d.Availible_days.Add(new Day(someday, standarttime));
                 }
 
                 Doctors.Add(d);
             }
+
+
         }
     }
 }

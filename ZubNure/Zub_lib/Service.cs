@@ -12,11 +12,10 @@ namespace Zub_lib
         public string Name { get; set; }
         public double Price { get; set; }
 
-        public Service (string name, double price)
+        public Service (string name, double price, byte rank)
         {
             Name = name;
             Price = price;
-
         }
     }
 }

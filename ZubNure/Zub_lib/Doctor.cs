@@ -12,14 +12,12 @@ namespace Zub_lib
     {
         public Bitmap Image { get; set; }
         public string Name_Acives { get; set; }
-        public List<Service> Avalible_service { get; private set; }
-        public List<DateTime> Availible_time { get; set; }
+        public List<Day> Availible_days { get; set; }
         //public List<DateTime> Booked_time { get; set; }
 
-        public void Book(DateTime time)
+        public void Book(string day, string time)
         {
             //Booked_time.Add(time);
-            Availible_time.Remove(time);
         }
 
     }

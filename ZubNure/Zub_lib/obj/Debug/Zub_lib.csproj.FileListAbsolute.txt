@@ -4,3 +4,9 @@ C:\Users\USER\Documents\GitHub\ZubNure\ZubNure\Zub_lib\obj\Debug\Zub_lib.csprojA
 C:\Users\USER\Documents\GitHub\ZubNure\ZubNure\Zub_lib\obj\Debug\Zub_lib.csproj.CoreCompileInputs.cache
 C:\Users\USER\Documents\GitHub\ZubNure\ZubNure\Zub_lib\obj\Debug\Zub_lib.dll
 C:\Users\USER\Documents\GitHub\ZubNure\ZubNure\Zub_lib\obj\Debug\Zub_lib.pdb
+C:\Users\User\Мусор (а может и нет)\2 курс\ЛМВЗ\ZubNure\ZubNure\Zub_lib\bin\Debug\Zub_lib.dll
+C:\Users\User\Мусор (а может и нет)\2 курс\ЛМВЗ\ZubNure\ZubNure\Zub_lib\bin\Debug\Zub_lib.pdb
+C:\Users\User\Мусор (а может и нет)\2 курс\ЛМВЗ\ZubNure\ZubNure\Zub_lib\obj\Debug\Zub_lib.csprojAssemblyReference.cache
+C:\Users\User\Мусор (а может и нет)\2 курс\ЛМВЗ\ZubNure\ZubNure\Zub_lib\obj\Debug\Zub_lib.csproj.CoreCompileInputs.cache
+C:\Users\User\Мусор (а может и нет)\2 курс\ЛМВЗ\ZubNure\ZubNure\Zub_lib\obj\Debug\Zub_lib.dll
+C:\Users\User\Мусор (а может и нет)\2 курс\ЛМВЗ\ZubNure\ZubNure\Zub_lib\obj\Debug\Zub_lib.pdb

@@ -56,6 +56,37 @@ namespace Zub_Forms
             var curr = dens.Doctors.Where(doctor => doctor.Name_Acives == comboBox1.Text).ToList()[0];
             reset(curr);
             index = dens.Doctors.FindIndex(doctor => doctor.Name_Acives == comboBox1.Text);
+            //изменение времени работы на форме
+            for (int j = 0; j<=7; j++)
+            {
+                Zub_lib.Day someday = curr.Availible_days[j];
+                switch (someday.date.DayOfWeek)
+                { 
+                    case DayOfWeek.Monday:
+                        label_mon.Text = Convert.ToString(someday.time[0]) + " - " + Convert.ToString(someday.time[someday.time.Count-1]);
+                        break;
+                    case DayOfWeek.Tuesday:
+                        label_tues.Text = Convert.ToString(someday.time[0]) + " - " + Convert.ToString(someday.time[someday.time.Count-1]);
+                        break;
+                    case DayOfWeek.Wednesday:
+                        label_wed.Text = Convert.ToString(someday.time[0]) + " - " + Convert.ToString(someday.time[someday.time.Count-1]);
+                        break;
+                    case DayOfWeek.Thursday:
+                        label_thurs.Text = Convert.ToString(someday.time[0]) + " - " + Convert.ToString(someday.time[someday.time.Count-1]);
+                        break;
+                    case DayOfWeek.Friday:
+                        label_fri.Text = Convert.ToString(someday.time[0]) + " - " + Convert.ToString(someday.time[someday.time.Count-1]);
+                        break;
+                    case DayOfWeek.Saturday:
+                        label_sat.Text = Convert.ToString(someday.time[0]) + " - " + Convert.ToString(someday.time[someday.time.Count-1]);
+                        break;
+                    case DayOfWeek.Sunday:
+                        label_sun.Text = Convert.ToString(someday.time[0]) + " - " + Convert.ToString(someday.time[someday.time.Count-1]);
+                        break;
+
+
+                }
+            }
         }
         private void reset(Doctor curr)
         {
@@ -71,6 +102,7 @@ namespace Zub_Forms
                 var curr = dens.Doctors[--index];
                 pictureBox2.Image = curr.Image;
                 label3.Text = curr.Name_Acives;
+                comboBox1.SelectedItem = comboBox1.Items[index];
             }
         }
 
@@ -81,7 +113,12 @@ namespace Zub_Forms
                 var curr = dens.Doctors[++index];
                 pictureBox2.Image = curr.Image;
                 label3.Text = curr.Name_Acives;
+                comboBox1.SelectedItem = comboBox1.Items[index];
             }
+        }
+
+        private void Main_Click(object sender, EventArgs e)
+        {
         }
     }
 }
