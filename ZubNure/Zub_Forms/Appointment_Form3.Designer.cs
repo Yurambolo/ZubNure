@@ -65,6 +65,7 @@
             this.Back.Size = new System.Drawing.Size(67, 62);
             this.Back.TabIndex = 11;
             this.Back.UseVisualStyleBackColor = false;
+            this.Back.Click += new System.EventHandler(this.Back_Click);
             // 
             // panel1
             // 
@@ -92,6 +93,7 @@
             this.Exit.Size = new System.Drawing.Size(40, 37);
             this.Exit.TabIndex = 3;
             this.Exit.UseVisualStyleBackColor = true;
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
             // label2
             // 
@@ -219,6 +221,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(518, 230);
             this.comboBox1.Name = "comboBox1";
@@ -301,9 +304,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

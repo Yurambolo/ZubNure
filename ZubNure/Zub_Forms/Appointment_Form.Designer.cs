@@ -81,6 +81,7 @@
             this.Back.Size = new System.Drawing.Size(67, 62);
             this.Back.TabIndex = 7;
             this.Back.UseVisualStyleBackColor = false;
+            this.Back.Click += new System.EventHandler(this.Back_Click);
             // 
             // panel1
             // 
@@ -108,6 +109,7 @@
             this.Exit.Size = new System.Drawing.Size(40, 37);
             this.Exit.TabIndex = 3;
             this.Exit.UseVisualStyleBackColor = true;
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
             // label2
             // 
@@ -220,9 +222,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(303, 230);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 17);
+            this.label6.Size = new System.Drawing.Size(70, 17);
             this.label6.TabIndex = 12;
-            this.label6.Text = "Имя";
+            this.label6.Text = "Фамилия";
             // 
             // textBox1
             // 
@@ -243,9 +245,9 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(303, 266);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(70, 17);
+            this.label7.Size = new System.Drawing.Size(35, 17);
             this.label7.TabIndex = 14;
-            this.label7.Text = "Фамилия";
+            this.label7.Text = "Имя";
             // 
             // textBox3
             // 
@@ -269,6 +271,8 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(214, 22);
             this.textBox4.TabIndex = 19;
+            this.textBox4.Text = "+";
+            this.textBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox4_KeyPress);
             // 
             // label9
             // 

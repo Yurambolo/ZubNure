@@ -27,32 +27,99 @@ namespace Zub_Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (String.IsNullOrWhiteSpace(textBox1.Text) || String.IsNullOrWhiteSpace(textBox2.Text) || String.IsNullOrWhiteSpace(textBox3.Text))
+            {
+                string message = "Fill all the fields";
+                string caption = "Error Detected in Input";
+                MessageBoxButtons buttons = MessageBoxButtons.OK;
+                DialogResult result;
+
+                // Displays the MessageBox.
+                result = MessageBox.Show(message, caption, buttons);
+                return;
+            }
+            if (textBox4.Text.Length < 10 || textBox4.Text.Length > 13)
+            {
+                string message = "Phone number format should be '+380*********'";
+                string caption = "Error Detected in Input";
+                MessageBoxButtons buttons = MessageBoxButtons.OK;
+                DialogResult result;
+
+                // Displays the MessageBox.
+                result = MessageBox.Show(message, caption, buttons);
+                return;
+            }
             User newuser = new User(textBox1.Text + " " + textBox2.Text + " " + textBox3.Text,textBox4.Text,textBox5.Text);
-            var f = new Appointment_Form2(dens, newuser);
-            this.Hide();
-            f.ShowDialog();
-            if (f.DialogResult == DialogResult.OK)
-                this.Close();
+            Main_Form.MenuNav(this, new Appointment_Form2(dens,newuser));
         }
 
         private void Doctors_Click(object sender, EventArgs e)
         {
-            Main_Form.MenuNav(this, new Doctrors_Form(dens));
+            DialogResult result = MessageBox.Show(
+                "Вы хотите покинуть форму записи? Все изменения будут потеряны",
+                "Предупреждение",
+                MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+                Main_Form.MenuNav(this, new Doctrors_Form(dens));
         }
 
         private void Main_Click(object sender, EventArgs e)
         {
-            Main_Form.MenuNav(this, new Main_Form(dens));
+            DialogResult result = MessageBox.Show(
+                "Вы хотите покинуть форму записи? Все изменения будут потеряны",
+                "Предупреждение",
+                MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+                Main_Form.MenuNav(this, new Main_Form(dens));
         }
 
         private void Feedback_Click(object sender, EventArgs e)
         {
-            Main_Form.MenuNav(this, new Serv_form(dens));
+            DialogResult result = MessageBox.Show(
+                "Вы хотите покинуть форму записи? Все изменения будут потеряны",
+                "Предупреждение",
+                MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+                Main_Form.MenuNav(this, new Serv_form(dens));
         }
 
         private void About_Click(object sender, EventArgs e)
         {
-            Main_Form.MenuNav(this, new Comment_Form(dens));
+            DialogResult result = MessageBox.Show(
+                "Вы хотите покинуть форму записи? Все изменения будут потеряны",
+                "Предупреждение",
+                MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+                Main_Form.MenuNav(this, new Comment_Form(dens));
+        }
+
+        private void Back_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+                "Вы хотите покинуть форму записи? Все изменения будут потеряны",
+                "Предупреждение",
+                MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+                this.Close();
+        }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+                "Вы хотите покинуть форму записи? Все изменения будут потеряны",
+                "Предупреждение",
+                MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+                Application.Exit();
+        }
+
+        private void textBox4_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (textBox4.Text.Length == 1 && ch == 8)
+                e.Handled = true;
+            if (!Char.IsDigit(ch) && ch != 8)
+                e.Handled = true;
         }
     }
 }

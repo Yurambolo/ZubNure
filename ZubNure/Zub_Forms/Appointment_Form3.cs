@@ -27,10 +27,21 @@ namespace Zub_Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (String.IsNullOrWhiteSpace(comboBox1.Text))
+            {
+                string message = "Выберите дату и время";
+                string caption = "Ошибка ввода";
+                MessageBoxButtons buttons = MessageBoxButtons.OK;
+                DialogResult result;
+
+                // Displays the MessageBox.
+                result = MessageBox.Show(message, caption, buttons);
+                return;
+            }
             dens.Appointments.Add(new Appointment(user, doctor, monthCalendar1.SelectionStart.ToString() + " " + comboBox1.Text));
             day.Booked_time.Add(comboBox1.Text);
             dens.Save();
-            this.Close();
+            Main_Form.MenuNav(this, new Main_Form(dens));
         }
 
         private void monthCalendar1_DateSelected(object sender, DateRangeEventArgs e)
@@ -51,22 +62,62 @@ namespace Zub_Forms
 
         private void Doctors_Click(object sender, EventArgs e)
         {
-            Main_Form.MenuNav(this, new Doctrors_Form(dens));
+            DialogResult result = MessageBox.Show(
+                "Вы хотите покинуть форму записи? Все изменения будут потеряны",
+                "Предупреждение",
+                MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+                Main_Form.MenuNav(this, new Doctrors_Form(dens));
         }
 
         private void Main_Click(object sender, EventArgs e)
         {
-            Main_Form.MenuNav(this, new Main_Form(dens));
+            DialogResult result = MessageBox.Show(
+                "Вы хотите покинуть форму записи? Все изменения будут потеряны",
+                "Предупреждение",
+                MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+                Main_Form.MenuNav(this, new Main_Form(dens));
         }
 
         private void Feedback_Click(object sender, EventArgs e)
         {
-            Main_Form.MenuNav(this, new Serv_form(dens));
+            DialogResult result = MessageBox.Show(
+                "Вы хотите покинуть форму записи? Все изменения будут потеряны",
+                "Предупреждение",
+                MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+                Main_Form.MenuNav(this, new Serv_form(dens));
         }
 
         private void About_Click(object sender, EventArgs e)
         {
-            Main_Form.MenuNav(this, new Comment_Form(dens));
+            DialogResult result = MessageBox.Show(
+                "Вы хотите покинуть форму записи? Все изменения будут потеряны",
+                "Предупреждение",
+                MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+                Main_Form.MenuNav(this, new Comment_Form(dens));
+        }
+
+        private void Back_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+                "Вы хотите покинуть форму записи? Все изменения будут потеряны",
+                "Предупреждение",
+                MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+                this.Close();
+        }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+                "Вы хотите покинуть форму записи? Все изменения будут потеряны",
+                "Предупреждение",
+                MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+                Application.Exit();
         }
     }
 }
