@@ -23,8 +23,7 @@ namespace Zub_Forms
             this.user = user;
             index = 0;
             var curr = dens.Doctors[index];
-            pictureBox2.Image = curr.Image;
-            label3.Text = curr.Name_Acives;
+            reset(curr);
         }
 
         private void Exit_Click(object sender, EventArgs e)
@@ -37,16 +36,18 @@ namespace Zub_Forms
             this.Close();
         }
 
-        private void About_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             var curr = dens.Doctors.Where(doctor => doctor.Name_Acives == comboBox1.Text).ToList()[0];
-            reset(curr);
             index = dens.Doctors.FindIndex(doctor => doctor.Name_Acives == comboBox1.Text);
+            reset(curr);           
+        }
+        private void reset(Doctor curr)
+        {
+
+            pictureBox2.Image = curr.Image;
+            label10.Text = curr.Name_Acives;
+            comboBox1.SelectedItem = comboBox1.Items[index];
             //изменение времени работы на форме
             for (int j = 0; j <= 7; j++)
             {
@@ -79,21 +80,13 @@ namespace Zub_Forms
                 }
             }
         }
-        private void reset(Doctor curr)
-        {
-            pictureBox2.Image = curr.Image;
-            label3.Text = curr.Name_Acives;
-            index = dens.Doctors.FindIndex(doctor => doctor.Name_Acives == curr.Name_Acives);
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
             if (index - 1 >= 0)
             {
                 var curr = dens.Doctors[--index];
-                pictureBox2.Image = curr.Image;
-                label3.Text = curr.Name_Acives;
-                comboBox1.SelectedItem = comboBox1.Items[index];
+                reset(curr);
             }
         }
 
@@ -102,9 +95,7 @@ namespace Zub_Forms
             if (index + 1 < dens.Doctors.Count)
             {
                 var curr = dens.Doctors[++index];
-                pictureBox2.Image = curr.Image;
-                label3.Text = curr.Name_Acives;
-                comboBox1.SelectedItem = comboBox1.Items[index];
+                reset(curr);
             }
         }
 
@@ -115,6 +106,26 @@ namespace Zub_Forms
             f.ShowDialog();
             if (f.DialogResult == DialogResult.OK)
                 this.Close();
+        }
+
+        private void Doctors_Click(object sender, EventArgs e)
+        {
+            Main_Form.MenuNav(this, new Doctrors_Form(dens));
+        }
+
+        private void Main_Click(object sender, EventArgs e)
+        {
+            Main_Form.MenuNav(this, new Main_Form(dens));
+        }
+
+        private void Feedback_Click(object sender, EventArgs e)
+        {
+            Main_Form.MenuNav(this, new Serv_form(dens));
+        }
+
+        private void About_Click(object sender, EventArgs e)
+        {
+            Main_Form.MenuNav(this, new Comment_Form(dens));
         }
     }
 }

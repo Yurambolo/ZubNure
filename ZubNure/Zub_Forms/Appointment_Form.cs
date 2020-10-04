@@ -34,5 +34,25 @@ namespace Zub_Forms
             if (f.DialogResult == DialogResult.OK)
                 this.Close();
         }
+
+        private void Doctors_Click(object sender, EventArgs e)
+        {
+            Main_Form.MenuNav(this, new Doctrors_Form(dens));
+        }
+
+        private void Main_Click(object sender, EventArgs e)
+        {
+            Main_Form.MenuNav(this, new Main_Form(dens));
+        }
+
+        private void Feedback_Click(object sender, EventArgs e)
+        {
+            Main_Form.MenuNav(this, new Serv_form(dens));
+        }
+
+        private void About_Click(object sender, EventArgs e)
+        {
+            Main_Form.MenuNav(this, new Comment_Form(dens));
+        }
     }
 }

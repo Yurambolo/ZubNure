@@ -96,6 +96,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1027, 86);
             this.panel1.TabIndex = 6;
+            this.panel1.Click += new System.EventHandler(this.Main_Click);
             // 
             // Exit
             // 
@@ -156,6 +157,7 @@
             this.Main.Name = "Main";
             this.Main.Size = new System.Drawing.Size(159, 34);
             this.Main.Text = "Главная         ";
+            this.Main.Click += new System.EventHandler(this.Main_Click);
             // 
             // Doctors
             // 
@@ -163,6 +165,7 @@
             this.Doctors.Name = "Doctors";
             this.Doctors.Size = new System.Drawing.Size(176, 34);
             this.Doctors.Text = "Доктора           ";
+            this.Doctors.Click += new System.EventHandler(this.Doctors_Click);
             // 
             // Appoint
             // 
@@ -176,12 +179,14 @@
             this.Feedback.Name = "Feedback";
             this.Feedback.Size = new System.Drawing.Size(121, 34);
             this.Feedback.Text = "Услуги     ";
+            this.Feedback.Click += new System.EventHandler(this.Feedback_Click);
             // 
             // About
             // 
             this.About.Name = "About";
             this.About.Size = new System.Drawing.Size(105, 34);
             this.About.Text = "Отзывы";
+            this.About.Click += new System.EventHandler(this.About_Click);
             // 
             // label3
             // 

@@ -107,6 +107,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1027, 86);
             this.panel1.TabIndex = 8;
+            this.panel1.Click += new System.EventHandler(this.Main_Click);
             // 
             // Exit
             // 
@@ -178,6 +179,7 @@
             this.Main.Name = "Main";
             this.Main.Size = new System.Drawing.Size(159, 34);
             this.Main.Text = "Главная         ";
+            this.Main.Click += new System.EventHandler(this.Main_Click);
             // 
             // Doctors
             // 
@@ -185,6 +187,7 @@
             this.Doctors.Name = "Doctors";
             this.Doctors.Size = new System.Drawing.Size(176, 34);
             this.Doctors.Text = "Доктора           ";
+            this.Doctors.Click += new System.EventHandler(this.Doctors_Click);
             // 
             // Appoint
             // 
@@ -198,12 +201,14 @@
             this.Feedback.Name = "Feedback";
             this.Feedback.Size = new System.Drawing.Size(121, 34);
             this.Feedback.Text = "Услуги     ";
+            this.Feedback.Click += new System.EventHandler(this.Feedback_Click);
             // 
             // About
             // 
             this.About.Name = "About";
             this.About.Size = new System.Drawing.Size(105, 34);
             this.About.Text = "Отзывы";
+            this.About.Click += new System.EventHandler(this.About_Click);
             // 
             // label5
             // 
@@ -439,6 +444,8 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Джон Сноу",
@@ -483,6 +490,7 @@
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.panel4.Controls.Add(this.label10);
+            this.panel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.panel4.Location = new System.Drawing.Point(4, 194);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
@@ -495,7 +503,7 @@
             this.label10.Location = new System.Drawing.Point(4, 0);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(54, 17);
+            this.label10.Size = new System.Drawing.Size(82, 26);
             this.label10.TabIndex = 0;
             this.label10.Text = "label10";
             // 

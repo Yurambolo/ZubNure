@@ -29,3 +29,5 @@ C:\Users\User\Мусор (а может и нет)\2 курс\ЛМВЗ\ZubNure\Z
 C:\Users\User\Мусор (а может и нет)\2 курс\ЛМВЗ\ZubNure\ZubNure\Zub_Forms\obj\Debug\Zub_Forms.Appointment_Form.resources
 C:\Users\User\Мусор (а может и нет)\2 курс\ЛМВЗ\ZubNure\ZubNure\Zub_Forms\obj\Debug\Zub_Forms.Appointment_Form2.resources
 C:\Users\User\Мусор (а может и нет)\2 курс\ЛМВЗ\ZubNure\ZubNure\Zub_Forms\obj\Debug\Zub_Forms.Appointment_Form3.resources
+C:\Users\User\Мусор (а может и нет)\2 курс\ЛМВЗ\ZubNure\ZubNure\Zub_Forms\obj\Debug\Zub_Forms.Comment_Form.resources
+C:\Users\User\Мусор (а может и нет)\2 курс\ЛМВЗ\ZubNure\ZubNure\Zub_Forms\obj\Debug\Zub_Forms.Serv_form.resources

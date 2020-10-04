@@ -66,7 +66,7 @@
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.panel1.ForeColor = System.Drawing.Color.Green;
             this.panel1.Location = new System.Drawing.Point(1, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1027, 86);
             this.panel1.TabIndex = 0;
@@ -76,7 +76,7 @@
             this.Exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Exit.BackgroundImage")));
             this.Exit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Exit.Location = new System.Drawing.Point(983, 4);
-            this.Exit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Exit.Margin = new System.Windows.Forms.Padding(4);
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(40, 37);
             this.Exit.TabIndex = 3;
@@ -109,7 +109,7 @@
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.Location = new System.Drawing.Point(856, 4);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(81, 71);
             this.pictureBox1.TabIndex = 0;
@@ -121,7 +121,7 @@
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.Appoint_Button);
             this.panel2.Location = new System.Drawing.Point(76, 134);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(344, 322);
             this.panel2.TabIndex = 1;
@@ -130,7 +130,7 @@
             // 
             this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
             this.panel3.Location = new System.Drawing.Point(5, 4);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(332, 220);
             this.panel3.TabIndex = 1;
@@ -141,7 +141,7 @@
             this.Appoint_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Appoint_Button.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Appoint_Button.Location = new System.Drawing.Point(5, 231);
-            this.Appoint_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Appoint_Button.Margin = new System.Windows.Forms.Padding(4);
             this.Appoint_Button.Name = "Appoint_Button";
             this.Appoint_Button.Size = new System.Drawing.Size(332, 82);
             this.Appoint_Button.TabIndex = 0;
@@ -152,19 +152,21 @@
             // 
             this.Back.BackColor = System.Drawing.Color.Maroon;
             this.Back.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Back.BackgroundImage")));
+            this.Back.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.Back.Location = new System.Drawing.Point(1, 90);
-            this.Back.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Back.Margin = new System.Windows.Forms.Padding(4);
             this.Back.Name = "Back";
             this.Back.Size = new System.Drawing.Size(67, 62);
             this.Back.TabIndex = 3;
             this.Back.UseVisualStyleBackColor = false;
+            this.Back.Click += new System.EventHandler(this.Back_Click);
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel4.Controls.Add(this.label3);
             this.panel4.Location = new System.Drawing.Point(525, 444);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(499, 66);
             this.panel4.TabIndex = 4;
@@ -187,7 +189,7 @@
             this.panel5.Controls.Add(this.label4);
             this.panel5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel5.Location = new System.Drawing.Point(16, 464);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(480, 64);
             this.panel5.TabIndex = 5;
@@ -231,12 +233,14 @@
             this.Feedback.Name = "Feedback";
             this.Feedback.Size = new System.Drawing.Size(127, 34);
             this.Feedback.Text = "Услуги      ";
+            this.Feedback.Click += new System.EventHandler(this.Feedback_Click);
             // 
             // About
             // 
             this.About.Name = "About";
             this.About.Size = new System.Drawing.Size(105, 34);
             this.About.Text = "Отзывы";
+            this.About.Click += new System.EventHandler(this.About_Click);
             // 
             // Menu
             // 
@@ -272,7 +276,7 @@
             this.Controls.Add(this.Menu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.Menu;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Main_Form";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
