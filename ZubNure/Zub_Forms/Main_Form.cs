@@ -27,13 +27,27 @@ namespace Zub_Forms
 
         }
 
-        private void Doctors_Click(object sender, EventArgs e)
+        public static void MenuNav(Form first, Form second)
         {
-            var f = new Doctrors_Form();
-            this.Hide();
+            var f = second;
+            first.Hide();
             f.ShowDialog();
             if (f.DialogResult == DialogResult.OK)
-                this.Show();
+                first.Show();
+        }
+        private void Doctors_Click(object sender, EventArgs e)
+        {
+            Main_Form.MenuNav(this, new Doctrors_Form());
+        }
+
+        private void Feedback_Click(object sender, EventArgs e)
+        {
+            Main_Form.MenuNav(this, new Serv_form());
+        }
+
+        private void About_Click(object sender, EventArgs e)
+        {
+            Main_Form.MenuNav(this, new Comment_Form());
         }
     }
 }

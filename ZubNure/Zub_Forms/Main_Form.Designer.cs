@@ -217,12 +217,14 @@
             this.Feedback.Name = "Feedback";
             this.Feedback.Size = new System.Drawing.Size(107, 29);
             this.Feedback.Text = "Услуги      ";
+            this.Feedback.Click += new System.EventHandler(this.Feedback_Click);
             // 
             // About
             // 
             this.About.Name = "About";
             this.About.Size = new System.Drawing.Size(89, 29);
             this.About.Text = "Отзывы";
+            this.About.Click += new System.EventHandler(this.About_Click);
             // 
             // Menu
             // 
@@ -237,7 +239,7 @@
             this.About});
             this.Menu.Location = new System.Drawing.Point(54, 73);
             this.Menu.Name = "Menu";
-            this.Menu.Size = new System.Drawing.Size(722, 33);
+            this.Menu.Size = new System.Drawing.Size(842, 33);
             this.Menu.TabIndex = 2;
             this.Menu.Text = "menuStrip1";
             // 

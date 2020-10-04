@@ -21,9 +21,9 @@ namespace Zub_Forms
             dens = new Dentistry();
             dens.FillTD(4);
             index = 0;
-            var curr = dens.Doctors[index];
+           /* var curr = dens.Doctors[index];
             pictureBox2.Image = curr.Image;
-            label3.Text = curr.Name_Acives;
+            label3.Text = curr.Name_Acives;*/
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -48,7 +48,7 @@ namespace Zub_Forms
 
         private void About_Click(object sender, EventArgs e)
         {
-
+            Main_Form.MenuNav(this, new Comment_Form());
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -119,6 +119,12 @@ namespace Zub_Forms
 
         private void Main_Click(object sender, EventArgs e)
         {
+            Main_Form.MenuNav(this, new Main_Form());
+        }
+
+        private void Feedback_Click(object sender, EventArgs e)
+        {
+            Main_Form.MenuNav(this, new Serv_form());
         }
     }
 }
