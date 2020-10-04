@@ -11,13 +11,13 @@ namespace Zub_lib
     {
         public string Name { get; set; }
         public string Mobile { get; set; }
-        public DateTime Birthday { get; set; }
+        public string Email { get; set; }
 
-        public User (string name, string mobile, DateTime time)
+        public User (string name, string mobile, string email)
         {
             Name = name;
             Mobile = mobile;
-            Birthday = time;
+            Email = email;
         }
 
 

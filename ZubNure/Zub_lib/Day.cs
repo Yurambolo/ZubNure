@@ -11,11 +11,13 @@ namespace Zub_lib
     {
         public DateTime date { get; set; }
         public List<string> time { get; set; }
+        public List<string> Booked_time { get; set; }
 
         public Day(DateTime date, List<string> time)
         {
             this.date = date;
             this.time = new List<string>(time);
+            Booked_time = new List<string>();
         }
 
     }

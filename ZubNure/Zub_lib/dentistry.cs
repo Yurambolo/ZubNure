@@ -13,14 +13,14 @@ namespace Zub_lib
         public List<User> Users { get; set; }
         public List<Doctor> Doctors { get; set; }
         public List<Service> Services { get; set; }
-        //public List<Appointment> Appointments { get; set; }
+        public List<Appointment> Appointments { get; set; }
 
         public Dentistry()
         {
             Users = new List<User>();
             Doctors = new List<Doctor>();
             r = new Random();
-            //Appointments = new List<Appointment>();
+            Appointments = new List<Appointment>();
         }
 
         public void Save()

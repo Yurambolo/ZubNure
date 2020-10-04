@@ -13,11 +13,20 @@ namespace Zub_lib
         public Bitmap Image { get; set; }
         public string Name_Acives { get; set; }
         public List<Day> Availible_days { get; set; }
-        //public List<DateTime> Booked_time { get; set; }
 
         public void Book(string day, string time)
         {
             //Booked_time.Add(time);
+        }
+
+        public Day FindDay(DateTime date)
+        {
+            foreach (Day day in Availible_days)
+            {
+                if (day.date.ToString() == date.ToString())
+                    return day;
+            }
+            return null;
         }
 
     }
