@@ -147,6 +147,7 @@
             this.Appoint_Button.TabIndex = 0;
             this.Appoint_Button.Text = "Записатся к доктору";
             this.Appoint_Button.UseVisualStyleBackColor = false;
+            this.Appoint_Button.Click += new System.EventHandler(this.Appoint_Click);
             // 
             // Back
             // 
@@ -257,7 +258,7 @@
             this.Menu.Location = new System.Drawing.Point(72, 90);
             this.Menu.Name = "Menu";
             this.Menu.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.Menu.Size = new System.Drawing.Size(1011, 38);
+            this.Menu.Size = new System.Drawing.Size(861, 38);
             this.Menu.TabIndex = 2;
             this.Menu.Text = "menuStrip1";
             // 

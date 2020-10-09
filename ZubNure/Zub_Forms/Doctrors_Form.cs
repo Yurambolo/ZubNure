@@ -127,5 +127,10 @@ namespace Zub_Forms
         {
             Main_Form.MenuNav(this, new Comment_Form(dens));
         }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            Main_Form.MenuNav(this, new Appointment_Form(dens, dens.Doctors[index]));
+        }
     }
 }

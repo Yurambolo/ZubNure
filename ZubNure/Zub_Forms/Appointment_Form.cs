@@ -14,10 +14,18 @@ namespace Zub_Forms
     public partial class Appointment_Form : Form
     {
         Dentistry dens;
+        Doctor doctor;
         public Appointment_Form(Dentistry dens)
         {
             InitializeComponent();
             this.dens = dens;
+        }
+
+        public Appointment_Form(Dentistry dens, Doctor doctor)
+        {
+            InitializeComponent();
+            this.dens = dens;
+            this.doctor = doctor;
         }
 
         private void Appointment_Form_Load(object sender, EventArgs e)
@@ -50,7 +58,10 @@ namespace Zub_Forms
                 return;
             }
             User newuser = new User(textBox1.Text + " " + textBox2.Text + " " + textBox3.Text,textBox4.Text,textBox5.Text);
-            Main_Form.MenuNav(this, new Appointment_Form2(dens,newuser));
+            if (doctor == null)
+                Main_Form.MenuNav(this, new Appointment_Form2(dens,newuser));
+            else
+                Main_Form.MenuNav(this, new Appointment_Form3(dens, newuser, doctor));
         }
 
         private void Doctors_Click(object sender, EventArgs e)
